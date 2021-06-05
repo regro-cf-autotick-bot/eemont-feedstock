@@ -1,18 +1,18 @@
 {% set name = "eemont" %}
-{% set version = "0.1.9" %}
+{% set version = "0.2.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: ee2f693fe5b988fe686773717c9c833e0d62772549b50444edd70d72ecb77719
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 6e8c7fd2e80dfe89e6b07ef371f701e32b1a1dcb8554b743c79cf4b0d873f7c1
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,11 +32,11 @@ test:
     - eemont
 
 about:
-  home: "https://github.com/davemlz/eemont"
+  home: https://github.com/davemlz/eemont
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A Python package that extends Google Earth Engine"
+  summary: A Python package that extends Google Earth Engine
   doc_url: https://eemont.readthedocs.io/
   dev_url: https://github.com/davemlz/eemont
 
