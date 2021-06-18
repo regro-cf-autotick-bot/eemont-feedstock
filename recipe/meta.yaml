@@ -1,5 +1,5 @@
 {% set name = "eemont" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6e8c7fd2e80dfe89e6b07ef371f701e32b1a1dcb8554b743c79cf4b0d873f7c1
+  sha256: e4f22d75dace60a8856e41afd0258c22f29d22c20e823545c8a7f5e3869071d4
 
 build:
   number: 0
