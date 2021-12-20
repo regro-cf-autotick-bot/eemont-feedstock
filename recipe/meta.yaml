@@ -19,7 +19,9 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - beautifulsoup4
     - earthengine-api
+    - ee_extra >=0.0.9
     - geopy
     - numpy
     - pandas
