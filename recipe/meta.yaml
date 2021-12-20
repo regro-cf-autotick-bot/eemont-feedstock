@@ -1,5 +1,5 @@
 {% set name = "eemont" %}
-{% set version = "0.2.5" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 75d94d7d96ec1d66000a2b62a244508e82231c51e8c439c047c42cc9b9d581bf
+  sha256: 3b8c21f1c29aacd8dbceffb9fc8d98633743925b4a877a9d14ff39049c251810
 
 build:
   number: 0
@@ -19,7 +19,9 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - beautifulsoup4
     - earthengine-api
+    - ee_extra >=0.0.9
     - geopy
     - numpy
     - pandas
