@@ -21,12 +21,12 @@ requirements:
   run:
     - beautifulsoup4
     - earthengine-api
-    - ee_extra >=0.0.13
+    - ee_extra >=0.0.14
     - geopy
     - numpy
     - pandas
     - python >=3.6
-    - python-box
+    - python-box >=6.0.0
     - requests
 
 test:
