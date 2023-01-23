@@ -21,7 +21,7 @@ requirements:
   run:
     - beautifulsoup4
     - earthengine-api
-    - ee_extra >=0.0.14
+    - ee_extra >=0.0.15
     - geopy
     - numpy
     - pandas
